@@ -1,12 +1,9 @@
-// Импорт базовых стилей приложения
 import './css/reset.css';
 import './css/base.css';
 
-// Импорт библиотек
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-// Импорт модулей
 import { getImagesByQuery } from './js/pixabay-api.js';
 import {
   createGallery,
@@ -32,7 +29,6 @@ function handleSubmit(event) {
     return;
   }
 
-  // Очищаем прошлый результат и запускаем лоадер
   clearGallery();
   showLoader();
 
@@ -47,7 +43,6 @@ function handleSubmit(event) {
         return;
       }
 
-      // Отрисовка галереи
       createGallery(data.hits);
     })
     .catch(error => {
@@ -58,7 +53,6 @@ function handleSubmit(event) {
       });
     })
     .finally(() => {
-      // Прячем лоадер в любом случае (успех или ошибка)
       hideLoader();
     });
 

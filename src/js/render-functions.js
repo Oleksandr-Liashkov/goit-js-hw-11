@@ -4,7 +4,6 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 const gallery = document.querySelector('.gallery');
 const loader = document.querySelector('.loader');
 
-// Инициализируем один раз за пределами функции
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
@@ -43,7 +42,6 @@ export function createGallery(images) {
 
   gallery.insertAdjacentHTML('beforeend', markup);
 
-  // Обязательно обновляем экземпляр для новых картинок
   lightbox.refresh();
 }
 
