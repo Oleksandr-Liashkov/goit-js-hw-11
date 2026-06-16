@@ -13,20 +13,20 @@ body {
 .form {
   display: flex;
   justify-content: center;
-  align-items: center; /* Выравнивает инпут и кнопку строго по одной горизонтальной оси */
+  align-items: center;
   gap: 8px;
   margin-bottom: 32px;
 }
 
 .form input {
-  box-sizing: border-box; /* Важно: включает рамки и паддинги в общую высоту 40px */
+  box-sizing: border-box;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #2e2f42;
   width: 272px;
-  height: 40px; /* Фиксированная высота */
+  height: 40px;
   padding: 8px 16px;
   border: 1px solid #808080;
   border-radius: 4px;
@@ -48,7 +48,7 @@ body {
 }
 
 .form button {
-  box-sizing: border-box; /* Включает паддинги в общую высоту */
+  box-sizing: border-box;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -60,7 +60,7 @@ body {
   border-radius: 4px;
   padding: 8px 20px;
   min-width: 91px;
-  height: 40px; /* Точно такая же высота, как у инпута */
+  height: 40px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
